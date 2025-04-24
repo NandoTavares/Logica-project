@@ -13,25 +13,20 @@ Windows: Baixe o instalador em swi-prolog.org​
 # 🚀 Como executar
 Clone este repositório:​
 
-bash
-Copiar
-git clone https://github.com/seuusuario/sistema-livros-prolog.git
-cd sistema-livros-prolog
+
+cd onde se localiza
 Abra o terminal do SWI-Prolog:​
-GitHub
-+1
-GitHub
-+1
 
 bash
 Copiar
 swipl
 Carregue o arquivo Prolog:​
 
-## prolog
+prolog
 Copiar
 ?- consult('nomedoarquivo.pl').
-Execute as consultas desejadas:​
+
+## Execute as consultas desejadas:​
 
 prolog
 Copiar
@@ -39,7 +34,8 @@ Copiar
 ?- recomendar_autor('asimov').
 ?- recomendar(ficcao_cientifica, 'asimov').
 ?- recomendar(ficcao_cientifica, 'asimov', 1951).
-📄 Estrutura do código
+
+# 📄 Estrutura do código
 Base de Conhecimento: Contém fatos sobre livros, incluindo título, gênero, autor e ano de publicação.
 
 ## Regras de Recomendação:
