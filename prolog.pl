@@ -43,7 +43,6 @@ repl :-
     ; Quest == sair        -> writeln('Ate logo!'), !
     ; exec(Quest), fail).
 
-% executa sem deixar sobrar "true." / "false."
 exec(Objetivo) :-
     (   call(Objetivo)
     *-> flush_output
