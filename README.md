@@ -13,27 +13,15 @@ Windows: Baixe o instalador em swi-prolog.org​
 # 🚀 Como executar
 Clone este repositório:​
 
-
-cd onde se localiza
 Abra o terminal do SWI-Prolog:​
 
-bash
-Copiar
-swipl
-Carregue o arquivo Prolog:​
-
-prolog
-Copiar
-?- consult('nomedoarquivo.pl').
+Compile o arquivo prolog:
 
 ## Execute as consultas desejadas:​
 
-prolog
-Copiar
-?- recomendar(ficcao_cientifica).
-?- recomendar_autor('asimov').
-?- recomendar(ficcao_cientifica, 'asimov').
-?- recomendar(ficcao_cientifica, 'asimov', 1951).
+- Rode o menu
+- Escolha sua opção de busca
+- Busque seu livro desejado desde que esteja no nosso banco de dados.
 
 # 📄 Estrutura do código
 Base de Conhecimento: Contém fatos sobre livros, incluindo título, gênero, autor e ano de publicação.
@@ -49,15 +37,10 @@ recomendar(Genero, Autor): Recomenda livros de um gênero e autor específicos.
 recomendar(Genero, Autor, Ano): Recomenda livros de um gênero, autor e ano específicos.​
 
 ## 🧪 Exemplos de uso
-prolog
-Copiar
-?- recomendar(fantasia).
-?- recomendar_autor('asimov').
-?- recomendar(fantasia, 'tolkien').
-?- recomendar(fantasia, 'tolkien', 1937).
+1.    (% escolha da opção 1, busca por categoria)
+fantasia.     (% escolha da categoria fantasia)
+
 ## 📌 Observações
 As consultas retornam os livros que atendem aos critérios especificados.
 
 O sistema utiliza o predicado write/1 para exibir os resultados no terminal.
-
-Para evitar o retorno de true ou false após a execução das consultas, o código foi estruturado para finalizar a execução sem retornar valores adicionais.
